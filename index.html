@@ -12,6 +12,22 @@
       <h1>Epicodus Track Suggester</h1>
       <p>Complete the following questionnaire to see what programming language track we suggest!</p>
 
+      <div id="ruby">
+        <h1><span class="name"></span>, you should attend the Ruby/Rails track at Epicodus!</h1>
+      </div>
+
+      <div id="css">
+        <h1><span class="name"></span>, you should attend the CSS/Design track at Epicodus!</h1>
+      </div>
+
+      <div id="java">
+        <h1><span class="name"></span>, you should attend the Java/Android track at Epicodus!</h1>
+      </div>
+
+      <div id="csharp">
+        <h1><span class="name"></span>, you should attend the C#/.NET track at Epicodus!</h1>
+      </div>
+
       <form id="quiz">
         <label for="name">Name</label>
         <input id="name" type="text"><br><br>
@@ -19,13 +35,13 @@
         <label class="label" for="end">Would you prefer to work in front-end development or back-end development?</label>
         <div class="radio">
           <label>
-            <input type="radio" name="end" value="front" checked>
+            <input type="radio" name="end" value="front">
             Front-end
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="end" value="back" checked>
+            <input type="radio" name="end" value="back">
             Back-end
           </label>
         </div>
@@ -33,61 +49,71 @@
         <label class="label" for="interest">What are you more interested in?</label>
         <div class="radio">
           <label>
-            <input type="radio" name="interest" value="webapp" checked>
+            <input type="radio" name="interest" value="webapp">
             Interactive Web Applications
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="interest" value="servers" checked>
+            <input type="radio" name="interest" value="servers">
             Servers
           </label>
           <div class="radio">
             <label>
-              <input type="radio" name="interest" value="styling" checked>
+              <input type="radio" name="interest" value="styling">
               Styling Web Pages
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="interest" value="data">
+              Data Collection
             </label>
           </div>
 
           <label class="label" for="device">What kind of device would you prefer to be programming for?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="device" value="android" checked>
+              <input type="radio" name="device" value="android">
               Android Phones
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="device" value="iphone" checked>
+              <input type="radio" name="device" value="iphone">
               iPhone (iOS)
             </label>
           <div class="radio">
             <label>
-              <input type="radio" name="device" value="mac" checked>
+              <input type="radio" name="device" value="mac">
               Mac
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="device" value="pc">
+              PC
             </label>
           </div>
 
           <label class="label" for="device">What kind of company would you prefer to work for?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="company" value="enterprise" checked>
+              <input type="radio" name="company" value="enterprise">
               Enterprise-Level
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="company" value="small" checked>
+              <input type="radio" name="company" value="small">
               Small Brands
             </label>
           <div class="radio">
             <label>
-              <input type="radio" name="company" value="startup" checked>
+              <input type="radio" name="company" value="startup">
               Startups
             </label>
           <div class="radio">
             <label>
-              <input type="radio" name="company" value="freelance" checked>
+              <input type="radio" name="company" value="freelance">
               Freelance Programmer
             </label>
           </div>
@@ -95,41 +121,24 @@
           <label class="label" for="environment">What type of environment would you like to work in?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="environment" value="solo" checked>
+              <input type="radio" name="environment" value="solo">
               Solo
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="environment" value="pair" checked>
+              <input type="radio" name="environment" value="pair">
               Pair Programming
             </label>
           <div class="radio">
             <label>
-              <input type="radio" name="environment" value="collaborative" checked>
+              <input type="radio" name="environment" value="collaborative">
               Collaborative
             </label>
           </div>
 
         <button type="submit" class="btn" id ="btn">Click to show what track suits you best!</button>
       </form>
-
-      <div id="ruby">
-        <h1>You should attend the Ruby/Rails track at Epicodus!</h1>
-      </div>
-
-      <div id="css">
-        <h1>You should attend the CSS/Design track at Epicodus!</h1>
-      </div>
-
-      <div id="java">
-        <h1>You should attend the Java/Android track at Epicodus!</h1>
-      </div>
-
-      <div id="csharp">
-        <h1>You should attend the C#/.NET track at Epicodus!</h1>
-      </div>
-
     </div>
 
   </body>

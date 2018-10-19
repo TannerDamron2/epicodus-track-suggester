@@ -7,15 +7,18 @@ $(document).ready(function() {
       var interest = $("input:radio[name=interest]:checked").val();
       var device =  $("input:radio[name=device]:checked").val();
       var company =  $("input:radio[name=company]:checked").val();
+      var environment =  $("input:radio[name=environment]:checked").val();
 
-      if (end === "front" && interest === "styling" ) {
+      $('.name').text(name);
+
+      if (end === "front" && interest === "styling" && environment === "solo" ) {
         $("#css").show();
-      } else if (end === "back" && interest === "webapp") {
+      } else if (end === "front" && interest === "webapp" && company === "small" && environment === "collaborative") {
         $("#ruby").show();
-      } else if (end === "front" && interest === "webapp" && device === "android"){
+      } else if (end === "back" && interest === "data" && device === "android" && company === "enterprise" && evironment === "collaborative"){
         $("#java").show();
-      } else if (end === "front" && interest === "webapp"){
-        $("#ruby").show();
+      } else if (end === "back" && interest === "servers" && device === "mac" && company === "enterprise" && environment === "solo"){
+        $("#csharp").show();
       } else{
         $("#").show();
       }
