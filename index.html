@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Epicodus Track Suggester</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Epicodus Track Suggester</h1>
+      <p>Complete the following questionnaire to see what programming language track we suggest!</p>
+
+      <form id="quiz">
+        <label for="name">Name</label>
+        <input id="name" type="text"><br><br>
+
+        <label for="end">Are you more interested in front-end development or back-end development?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="end" value="front" checked>
+            Front-end
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="end" value="back" checked>
+            Back-end
+          </label>
+        </div>
+
+        <label for="interest">What are you more interested in?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interest" value="webapp" checked>
+            Interactive Web Applications
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interest" value="servers" checked>
+            Servers
+          </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="interest" value="styling" checked>
+              Styling Web Pages
+            </label>
+          </div>
+
+          <label for="interest">What kind of device would you prefer to be programming for?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="interest" value="android" checked>
+              Android Phones
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="interest" value="iphone" checked>
+              iPhone (iOS)
+            </label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="interest" value="pc" checked>
+                PC
+              </label>
+            </div>
+
+        <button type="submit" class="btn" id ="btn">Click to show what track suits you best!</button>
+      </form>
+
+      <div id="ruby">
+        <h1>You should attend the Ruby/Rails track at Epicodus!</h1>
+      </div>
+
+      <div id="css">
+        <h1>You should attend the CSS/Design track at Epicodus!</h1>
+      </div>
+
+      <div id="java">
+        <h1>You should attend the Java/Android track at Epicodus!</h1>
+      </div>
+
+      <div id="csharp">
+        <h1>You should attend the C#/.NET track at Epicodus!</h1>
+      </div>
+
+    </div>
+
+  </body>
+</html>
