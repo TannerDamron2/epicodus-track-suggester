@@ -14,30 +14,31 @@ $(document).ready(function() {
     }else if (!end || !interest || !device || !company || !environment){
     alert("Please fill in all choices")
     }else if (end === "front" && interest === "styling" && device != "android" && company != "startup"  && environment != "pair") {
-      $("#css").show();
+      $("#css").fadeIn(2000);
       $("#ruby").hide();
       $("#java").hide();
       $("#csharp").hide();
     } else if (end === "front" && interest === "webapp" && device != "android" &&  company != "freelance" && environment != "pair") {
-      $("#ruby").show();
+      $("#ruby").fadeIn(2000);
       $("#css").hide();
       $("#java").hide();
       $("#csharp").hide();
     } else if (end === "back" && interest != "styling" && device === "android" && company === "enterprise" && environment != "pair"){
-      $("#java").show();
+      $("#java").fadeIn(2000);
       $("#ruby").hide();
       $("#css").hide();
       $("#csharp").hide();
     } else if (end === "back" && interest != "styling" && device != "android" && company === "enterprise" && environment === "solo"){
-      $("#csharp").show();
+      $("#csharp").fadeIn(2000);
       $("#ruby").hide();
       $("#java").hide();
       $("#css").hide();
     } else{
-      $("#ruby").show();
+      $("#ruby").fadeIn(2000);
       $("#csharp").hide();
       $("#java").hide();
       $("#css").hide();
     }
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
 });
