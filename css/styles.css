@@ -1,7 +1,17 @@
 .btn {
   display: block;
+  margin: 5% 35% 0% 35%;
 }
 
 #ruby,#java,#css,#csharp {
   display: none;
+}
+
+body {
+  text-align: center;
+}
+
+.label {
+  font-size: 25px;
+  font-family: sans-serif;
 }

@@ -5,14 +5,17 @@ $(document).ready(function() {
       var name = $("input#name").val();
       var end = $("input:radio[name=end]:checked").val();
       var interest = $("input:radio[name=interest]:checked").val();
+      var device =  $("input:radio[name=device]:checked").val();
+      var company =  $("input:radio[name=company]:checked").val();
 
       if (end === "front" && interest === "styling" ) {
         $("#css").show();
       } else if (end === "back" && interest === "webapp") {
         $("#ruby").show();
+      } else if (end === "front" && interest === "webapp" && device === "android"){
+        $("#java").show();
       } else if (end === "front" && interest === "webapp"){
         $("#ruby").show();
-
       } else{
         $("#").show();
       }

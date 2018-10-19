@@ -16,7 +16,7 @@
         <label for="name">Name</label>
         <input id="name" type="text"><br><br>
 
-        <label for="end">Are you more interested in front-end development or back-end development?</label>
+        <label class="label" for="end">Would you prefer to work in front-end development or back-end development?</label>
         <div class="radio">
           <label>
             <input type="radio" name="end" value="front" checked>
@@ -30,7 +30,7 @@
           </label>
         </div>
 
-        <label for="interest">What are you more interested in?</label>
+        <label class="label" for="interest">What are you more interested in?</label>
         <div class="radio">
           <label>
             <input type="radio" name="interest" value="webapp" checked>
@@ -49,24 +49,67 @@
             </label>
           </div>
 
-          <label for="interest">What kind of device would you prefer to be programming for?</label>
+          <label class="label" for="device">What kind of device would you prefer to be programming for?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="interest" value="android" checked>
+              <input type="radio" name="device" value="android" checked>
               Android Phones
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="interest" value="iphone" checked>
+              <input type="radio" name="device" value="iphone" checked>
               iPhone (iOS)
             </label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="interest" value="pc" checked>
-                PC
-              </label>
-            </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="device" value="mac" checked>
+              Mac
+            </label>
+          </div>
+
+          <label class="label" for="device">What kind of company would you prefer to work for?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="enterprise" checked>
+              Enterprise-Level
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="small" checked>
+              Small Brands
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="startup" checked>
+              Startups
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="freelance" checked>
+              Freelance Programmer
+            </label>
+          </div>
+
+          <label class="label" for="environment">What type of environment would you like to work in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="solo" checked>
+              Solo
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="pair" checked>
+              Pair Programming
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="environment" value="collaborative" checked>
+              Collaborative
+            </label>
+          </div>
 
         <button type="submit" class="btn" id ="btn">Click to show what track suits you best!</button>
       </form>
