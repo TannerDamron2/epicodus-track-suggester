@@ -8,9 +8,7 @@ $(document).ready(function() {
     var device =  $("input:radio[name=device]:checked").val();
     var company =  $("input:radio[name=company]:checked").val();
     var environment =  $("input:radio[name=environment]:checked").val();
-
     $('.name').text(name);
-
     if (!name){
     alert("Enter your name");
     }else if (!end || !interest || !device || !company || !environment){
