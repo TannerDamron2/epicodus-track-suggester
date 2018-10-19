@@ -6,6 +6,10 @@
 
 #ruby,#java,#css,#csharp {
   display: none;
+  border: 5px solid #52CCCD;
+  border-radius: 20%;
+  padding: 5%;
+  margin: 5%;
 }
 
 body {
