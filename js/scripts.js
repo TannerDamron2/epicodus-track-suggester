@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $("form#quiz").submit(function(event){
+  $("form#form").submit(function(event){
     event.preventDefault();
     var name = $("input#name").val();
     var end = $("input:radio[name=end]:checked").val();
