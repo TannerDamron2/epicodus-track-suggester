@@ -10,7 +10,7 @@ $(document).ready(function() {
     var environment =  $("input:radio[name=environment]:checked").val();
     $('.name').text(name);
     if (!name){
-    alert("Enter your name");
+    alert("Please enter your name");
     }else if (!end || !interest || !device || !company || !environment){
     alert("Please fill in all choices")
     }else if (end === "front" && interest === "styling" && device != "android" && company != "startup"  && environment != "pair") {

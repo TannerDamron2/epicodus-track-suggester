@@ -14,6 +14,7 @@
 
 body {
   text-align: center;
+  background-color: #EBFFFF;
 }
 
 .label {
@@ -23,13 +24,24 @@ body {
 img {
   width: 20%;
   height: 20%;
+  margin-top: 3%
 }
 
 .title {
   color: #52CCCD;
+  font-family: garamond;
+  margin-top: 3%;
+  text-decoration: underline;
+  font-size: 50px;
+  text-shadow: 1px 1px black;
 }
 
 p {
   font-size: 25px;
   font-style: oblique;
+}
+
+label {
+  font: 300 16px/1.7 'Open Sans', sans-serif;
+  color: #5C5C5C;
 }
