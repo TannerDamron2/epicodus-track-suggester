@@ -16,7 +16,7 @@ This a page that takes the user input from forms and applies them to logic (if, 
 
 ## Known Bugs
 
-None
+Majority of possible input combinations will come out to else statement
 
 ### Languages/Frameworks Used
 
