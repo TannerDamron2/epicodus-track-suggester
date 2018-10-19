@@ -45,3 +45,7 @@ label {
   font: 300 16px/1.7 'Open Sans', sans-serif;
   color: #5C5C5C;
 }
+
+label input {
+  cursor: pointer;
+}
