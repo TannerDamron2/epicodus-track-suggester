@@ -12,12 +12,12 @@ $(document).ready(function() {
     alert("Please enter your name");
     }else if (!end || !interest || !device || !company || !environment){
     alert("Please fill in all choices")
-    }else if (end === "front" && interest === "styling" && device != "android" && company != "startup"  && environment != "pair") {
+    }else if (end === "front" && interest === "styling" && device != "android" && company != "startup"  && environment != "pair"){
       $("#css").fadeIn(2000);
       $("#ruby").hide();
       $("#java").hide();
       $("#csharp").hide();
-    } else if (end === "front" && interest === "webapp" && device != "android" &&  company != "freelance" && environment != "pair") {
+    } else if (end === "front" && interest === "webapp" && device != "android" &&  company != "freelance" && environment != "pair"){
       $("#ruby").fadeIn(2000);
       $("#css").hide();
       $("#java").hide();
