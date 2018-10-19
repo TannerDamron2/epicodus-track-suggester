@@ -13,22 +13,22 @@ $(document).ready(function() {
 
       if (!name){
       alert("Enter your name");
-    }else if (end === "front" && interest === "styling" && device === "pc" && company === "enterprise"  && environment === "solo") {
+    }else if (end === "front" && interest === "styling" && device != "android" && company != "startup"  && environment === "solo") {
         $("#css").show();
         $("#ruby").hide();
         $("#java").hide();
         $("#csharp").hide();
-      } else if (end === "front" && interest === "webapp" && device === "android" &&  company === "small" && environment === "collaborative") {
+      } else if (end === "front" && interest === "webapp" && device != "android" &&  company != "freelance" && environment != "pair") {
         $("#ruby").show();
         $("#css").hide();
         $("#java").hide();
         $("#csharp").hide();
-      } else if (end === "back" && interest === "data" && device === "android" && company === "enterprise" && environment === "collaborative"){
+      } else if (end === "back" && interest != "styling" && device === "android" && company === "enterprise" && environment != "pair"){
         $("#java").show();
         $("#ruby").hide();
         $("#css").hide();
         $("#csharp").hide();
-      } else if (end === "back" && interest === "servers" && device === "mac" && company === "enterprise" && environment === "solo"){
+      } else if (end === "back" && interest != "styling" && device != "android" && company === "enterprise" && environment === "solo"){
         $("#csharp").show();
         $("#ruby").hide();
         $("#java").hide();
@@ -39,6 +39,5 @@ $(document).ready(function() {
         $("#java").hide();
         $("#css").hide();
       }
-
     });
 });
